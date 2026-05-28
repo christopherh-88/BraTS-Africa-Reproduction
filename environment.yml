@@ -1,0 +1,26 @@
+name: brats
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    # For local development on Mac (CPU / Apple Silicon MPS)
+    # On Kaggle/Linux with CUDA, install torch separately:
+    #   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+    - torch
+    - torchvision
+    - torchaudio
+    - nnunetv2
+    - nibabel          # NIfTI file I/O
+    - SimpleITK        # medical image I/O
+    - Pillow           # TIFF/PNG image reading for TCGA-LGG conversion
+    - numpy
+    - scipy
+    - scikit-learn
+    - matplotlib
+    - pandas
+    - tqdm
+    - jupyter
+    - ipykernel

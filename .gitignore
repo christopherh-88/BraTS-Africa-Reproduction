@@ -1,0 +1,50 @@
+# Data (large files — store locally or on Kaggle, not in git)
+data/raw/
+data/preprocessed/
+data/results/
+*.nii
+*.nii.gz
+*.mha
+*.mhd
+*.tif
+*.tiff
+*.png
+
+# nnU-Net outputs
+nnUNet_raw/
+nnUNet_preprocessed/
+nnUNet_results/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Conda / virtualenv
+.env
+.venv
+env/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Logs and checkpoints (large)
+*.log
+wandb/
+lightning_logs/
